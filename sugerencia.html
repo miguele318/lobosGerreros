@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link type="text/css" rel="stylesheet" href="css/default.css" />
+    <link type="text/css" rel="stylesheet" href="css/maquetado.css" />
+    <title>Sugerencias</title>
+</head>
+
+<body>
+    <div id="top">
+        <h1>Lobos Guerreros</h1>
+    </div>
+    <div>
+        <div id="left">
+            <h2>Opciones</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    Miembros de la tribu
+                    <ul>
+                      <li><a href="miguele.html">MiguelE</a></li>
+                      <li><a href=".html">Jeison C</a></li>
+                      <li><a href=".html">Hector</a></li>
+                      <li><a href=".html">Jeison O</a></li>
+                    </ul>
+                </li>
+                <li><a href="sugerencia.html">Sugerencias</a></li>
+            </ul>
+        </div>
+        <div id="content" class="left_content">
+            <h1>Buzón de sugerencias </h1>
+            <form action="" id="frm-sugerencia">
+                <div class="form-ctrl">
+                    <label for="">Nombre</label>
+                    <input type="text" required name="nombre" />
+                </div>
+                <div class="form-ctrl">
+                    <label for="Edad">Edad</label>
+                    <input min="18" max="100" type="number" required name="Edad">
+                </div>
+                <div class="form-ctrl">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="info@correo.com" required />
+                </div>
+                <div class="form-ctrl">
+                    <label for="Pais">Pais</label>
+                    <input type="text" name="Pais" required>
+                </div>
+                <div class="form-ctrl">
+                    <label for="sexo">sexo</label>
+                    <select name="sexo">
+                        <option value="Masc">Masculino</option>
+                        <option value="Fem">Femenino</option>
+                        <option value="Otro">Otros</option>
+                    </select>
+                </div>
+                <div class="form-ctrl">
+                    <label for="Sugeren cia">Sugerencia</label>
+                    <textarea name="Sugerencia" id="ta" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-opc">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+        <center>
+            <div id="bottom">Ingenieria de Sistemas - Software 3
+            </div>
+        </center>
+</body>
+
+</html>
