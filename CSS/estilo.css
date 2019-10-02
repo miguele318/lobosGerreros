@@ -8,12 +8,12 @@ body {
     font-size: 22px;
 }
 .menNaveg{
-    position: initial;
+    position: fixed;
     top: 0;
     width: 100%;
     background-color: #000000;
     overflow: hidden;
-    z-index: 1;
+    z-index: 50;
 }
 .menNaveg a{
     float: left;
@@ -48,7 +48,7 @@ body {
 }
 .principal img {
     position: absolute;
-    top: 20px;
+    top: 90px;
     left: 100px;
 }
 .info p{
