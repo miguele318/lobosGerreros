@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav span {
+    font-size: 20px;
+}
+
+body {
+    font-family:'italica';
+    font-size: 22px;
+}
+
+.topnav
+{
+    position: fixed;
+    width:100%;
+    top:0;
+    overflow: hidden;
+    background-color: #000000;
+    z-index: 50;
+}
+
+.topnav a{
+    float: left;
+    color: #DE6E17;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline black;
+    font-size: 17px
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color:red;
+}
+
+
+.principal{
+    width: 100%;
+    height: 520px;
+    background-image: url("../imagenes/lobosGuerreros.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    flex-wrap: wrap;
+    top:48px;
+    display: flex;
+}
+
+#container-info{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(153,102,15,0.1);
+}
+
+.principal img {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.info p{
+    position: absolute;
+    top: 60px;
+    left: 420px;
+    color: white;
+} 
