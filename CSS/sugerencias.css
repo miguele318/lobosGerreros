@@ -1,0 +1,100 @@
+*{
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#titulo h1{
+    font-size: 25px;
+    text-align: center;
+    background: #000000;
+    color: #DE6E17;
+}
+
+#nav{
+    background: #000000;
+    list-style: none;
+    overflow:hidden;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a{
+    display: block;
+    padding: 10px 20px;
+    color: #DE6E17;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    background: #DE6E17;
+    color: #000000;
+}
+
+.general{
+    position: relative;
+}
+
+.sug{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+
+.form-ctrl {
+    margin-bottom: 10px;
+  }
+
+  label {
+    float: left;
+    width: 150px;
+  }
+  
+  .imgperfil {
+    float: left;
+  }
+
+.piePagina{
+    position: relative;
+    top: 550px;
+    background: #000000;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.informacion{
+    color: #DE6E17;
+    list-style: none;
+    overflow:hidden;
+}
+
+.infoPagina{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.listNaveg{
+    background: #000000;
+    list-style: none;
+    overflow:hidden;
+}
+
+.listNaveg li {
+    float: left;
+}
+
+.listNaveg li a{
+    display: block;
+    padding: 10px 20px;
+    color: #DE6E17;
+    text-decoration: none;
+}
+
+.listNaveg li a:hover {
+    background: #DE6E17;
+    color: #000000;
+}

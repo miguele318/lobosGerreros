@@ -5,62 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<link rel="stylesheet" href="css/style.css">-->
     <link type="text/css" rel="stylesheet" href="CSS/index.css" />
     <title>Lobos Guerreros</title>
 </head>
+    <script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script>
+		$(function(){
+		  $(".slides").slidesjs({
+			play: {
+			active: true,
+				// [boolean] Generate the play and stop buttons.
+				// You cannot use your own buttons. Sorry.
+			effect: "slide",
+				// [string] Can be either "slide" or "fade".
+			interval: 10000,
+				// [number] Time spent on each slide in milliseconds.
+			auto: false,
+				// [boolean] Start playing the slideshow on load.
+			swap: true,
+				// [boolean] show/hide stop and play buttons
+			pauseOnHover: false,
+				// [boolean] pause a playing slideshow on hover
+			restartDelay: 2500
+				// [number] restart delay on inactive slideshow
+			}
+		});
+	});
+	</script>
 
 <body>
-    <div id="top">
+    <div id="titulo">
         <h1>LOBOS GUERREROS</h1>
     </div>
     <div>
-        <div id="left">
-            <h2>Opciones</h2>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li>
-                    Integrantes de la tribu:
-                    <ul>
-                        <li><a href="miguele.html">MiguelE</a></li>
-                        <li><a href=".html">Jeison C</a></li>
-                        <li><a href=".html">Hector</a></li>
-                        <li><a href=".html">Jeison O</a></li>
+        <div id="nav">
+            <nav class="menNaveg">
+                <ul>
+                    <li><a href="#informacion">Informacion</a></li>
+                    <li><a href="#integrantes">Integrantes</a></li>
+                    <li><a href="sugerencia.html">Sugerencias</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="imagen">
+            <h2>Bienvenidos a la Pagina de Los Lobos Guerreros</h2>
+        </div>
+        <div id="informacion" class="lobos">
+            <h1>Informacion General</h1>
+            <div class="slides">
+                <div class="infoLobos">
+                    <img width="250" height="250" src="Imagenes/logo.jpg" alt="">
+                    <div class="text">
+                    <h3>Los lobos forman parte de la mitología de muchas
+                        civilizaciones a lo largo de varias epocas a sido
+                        adorado y temido ya sea en roma donde una loba
+                        amamanto a los fundadores del mayor imperio del
+                        mundo o en la nordica donde un gran lobo (fenrir)
+                        causara la destruccion del mundo en este apartado
+                        se explicara las diferentes leyendas de este animal...
+                    </h3></div>
+                </div>
+                <div class="infoLobos">
+                    <iframe width="690" height="410"
+						src="https://www.youtube.com/embed/P1Bu8VWHsrQ"
+						allowfullscreen></iframe>
+					<div class="infoVideo">
+						<h3> Video sobre la mitologia de los Lobos </h3>
+					</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="integrantes" class="inicio">
+            <h1>Integrantes</h1>
+            <div class="slides">
+                <div class="inform">
+                    <h3>Miguel Calambas</h3>
+                    <a target="_blank" href="miguele.html"><img width="300" height="400" src="Imagenes/miguele.jpg" alt=""></a>
+                </div>
+                <div class="inform">
+                    <h3>Jeison Ortiz</h3>
+                    <a target="_blank" href="jeisonortiz.html"><img width="300" height="400" src="Imagenes/jeison-heler.png" alt=""></a>
+                </div>
+                <div class="inform">
+                    <h3>Hector Meneses</h3>
+                    <a target="_blank" href="hectorMeneses.html"><img width="300" height="400" src="Imagenes/hector-mago.jpg" alt=""></a>
+                </div>
+                <div class="inform">
+                    <h3>Jeison Calambas</h3>
+                    <a target="_blank" href="jeisonCalambas.html"><img width="300" height="400" src="Imagenes/jeisonCalambas.png" alt=""></a>
+                </div>
+                <div class="inform">
+                    <h3>Joel Solis</h3>
+                    <a target="_blank" href="joel.html"><img width="300" height="400" src="Imagenes/warrior.jfif" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="piePagina">
+            <div class="informacion">
+                <div class="infoPagina">
+                    <ul class="listNaveg">
+                        <li><a href="#nav">Inicio</a></li>
+                        <li><a href="#informacion">Informacion General</a></li>
+                        <li><a href="#integrantes">Integrantes</a></li>
+                        <li><a href="sugerencia.html">Sugerencias</a></li>
                     </ul>
-                </li>
-                <li><a href="sugerencia.html">Sugerencias</a></li>
-            </ul>
+                </div>
+                <div class="infoPagina">
+                    <h3>Creada por : Lobos Guerreros</h3>
+                </div>
+                <div class="infoPagina">
+                    <h2>Info</h2>
+                    <p>Página Web de la Tribu Lobos Guerreros, elaborada con propósitos educativos para la materia Ingeniería del Software 3 del Programa Ingeniería de Sistemas de la Univesidad del Cauca.</p>
+                </div>
+            </div>
         </div>
-        <div id="content" class="left_content">
-            <h1>Los Lobos</h1>
-            <table>
-                <tr>
-                    <td><img src="img/imglogo.png" class="content-img" alt="Bienvenido" /></td>
-                    <td>
-                        <p>Los lobos forman parte de la mitología de muchas
-                          civilizaciones a lo largo de varias epocas a sido
-                          adorado y temido ya sea en roma donde una loba
-                          amamanto a los fundadores del mayor imperio del
-                          mundo o en la nordica donde un gran lobo (fenrir)
-                          causara la destruccion del mundo en este apartado
-                          se explicara las diferentes leyendas de este animal...
-                        </p>
-                    </td>
-                </tr>
-            </table>
-
-            <h2>A cerca de</h2>
-            <p>En esta página se encuentra información correspondiente a la tribu que
-                se escogio para representar al grupo de ingenieria de software 3
-            </p>
-            <iframe width="681" height="511" src="https://www.youtube.com/embed/P1Bu8VWHsrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Aun en construccion</p>
-        </div>
-    </div>
-
-        <div id="bottom">Universidad del Cauca  -  Ingenieria de Sistemas - Software 3
-        </div>
-
 </body>
 
 </html>
