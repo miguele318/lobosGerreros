@@ -6,50 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--<link rel="stylesheet" href="css/style.css">-->
-    <link type="text/css" rel="stylesheet" href="css/default.css" />
-    <link type="text/css" rel="stylesheet" href="css/maquetado.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/sugerencias.css" />
     <title>Sugerencias</title>
 </head>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script>
+		$(function(){
+		  $(".slides").slidesjs({
+			play: {
+			active: true,
+				// [boolean] Generate the play and stop buttons.
+				// You cannot use your own buttons. Sorry.
+			effect: "slide",
+				// [string] Can be either "slide" or "fade".
+			interval: 10000,
+				// [number] Time spent on each slide in milliseconds.
+			auto: false,
+				// [boolean] Start playing the slideshow on load.
+			swap: true,
+				// [boolean] show/hide stop and play buttons
+			pauseOnHover: false,
+				// [boolean] pause a playing slideshow on hover
+			restartDelay: 2500
+				// [number] restart delay on inactive slideshow
+			}
+		});
+	});
+	</script>
 
 <body>
-    <div id="top">
-        <h1>Lobos Guerreros</h1>
+    <div id="titulo">
+        <h1>LOBOS GUERREROS</h1>
     </div>
-    <div>
-        <div id="left">
-            <h2>Opciones</h2>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li>
-                    Miembros de la tribu
-                    <ul>
-                      <li><a href="miguele.html">MiguelE</a></li>
-                      <li><a href=".html">Jeison C</a></li>
-                      <li><a href=".html">Hector</a></li>
-                      <li><a href=".html">Jeison O</a></li>
-                    </ul>
-                </li>
-                <li><a href="sugerencia.html">Sugerencias</a></li>
-            </ul>
+    <div class="genral">
+        <div id="nav">
+            <nav class="menNaveg">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                </ul>
+            </nav>
         </div>
-        <div id="content" class="left_content">
+        <div class="sug">
+            <div id="content" class="left_content">
             <h1>Buzón de sugerencias </h1>
             <form action="" id="frm-sugerencia">
                 <div class="form-ctrl">
                     <label for="">Nombre</label>
-                    <input type="text" required name="nombre" />
+                    <input type="text" required name="nombre" /></br>
                 </div>
                 <div class="form-ctrl">
                     <label for="Edad">Edad</label>
-                    <input min="18" max="100" type="number" required name="Edad">
+                    <input min="18" max="100" type="number" required name="Edad"></br>
                 </div>
                 <div class="form-ctrl">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="info@correo.com" required />
+                    <input type="email" name="email" placeholder="info@correo.com" required /></br>
                 </div>
                 <div class="form-ctrl">
                     <label for="Pais">Pais</label>
-                    <input type="text" name="Pais" required>
+                    <input type="text" name="Pais" required></br>
                 </div>
                 <div class="form-ctrl">
                     <label for="sexo">sexo</label>
@@ -57,21 +73,34 @@
                         <option value="Masc">Masculino</option>
                         <option value="Fem">Femenino</option>
                         <option value="Otro">Otros</option>
-                    </select>
+                    </select></br>
                 </div>
                 <div class="form-ctrl">
                     <label for="Sugeren cia">Sugerencia</label>
-                    <textarea name="Sugerencia" id="ta" cols="30" rows="10"></textarea>
+                    <textarea name="Sugerencia" id="ta" cols="30" rows="10"></textarea></br>
                 </div>
                 <div class="form-opc">
-                    <button>Enviar</button>
+                    <button>Enviar</button></br>
                 </div>
             </form>
         </div>
-        <center>
-            <div id="bottom">Ingenieria de Sistemas - Software 3
+    </div>
+    <div class="piePagina">
+        <div class="informacion">
+            <div class="infoPagina">
+                <ul class="listNaveg">
+                    <li><a href="index.html">Index</a></li>
+                </ul>
             </div>
-        </center>
+            <div class="infoPagina">
+                <h3>Creada por : Lobos Guerreros</h3>
+            </div>
+            <div class="infoPagina">
+                <h2>Info</h2>
+                <p>Página Web de la Tribu Lobos Guerreros, elaborada con propósitos educativos para la materia Ingeniería del Software 3 del Programa Ingeniería de Sistemas de la Univesidad del Cauca.</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
