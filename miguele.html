@@ -1,1 +1,145 @@
-puto el que lo lea!!! 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title> Miguel Calambas Lobo Guerrero</title>
+		<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+		<link rel="stylesheet" href="fonts.css">
+	</head>
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script>
+		$(function(){
+		  $(".slides").slidesjs({
+			play: {
+			active: true,
+				// [boolean] Generate the play and stop buttons.
+				// You cannot use your own buttons. Sorry.
+			effect: "slide",
+				// [string] Can be either "slide" or "fade".
+			interval: 2000,
+				// [number] Time spent on each slide in milliseconds.
+			auto: false,
+				// [boolean] Start playing the slideshow on load.
+			swap: true,
+				// [boolean] show/hide stop and play buttons
+			pauseOnHover: false,
+				// [boolean] pause a playing slideshow on hover
+			restartDelay: 2500
+				// [number] restart delay on inactive slideshow
+			}
+		});
+	});
+	</script>
+	<body>
+		<header>
+		<div id="naveg" class="navegacion">
+			<nav class="menNaveg">
+				<a href=""> Miguel Calambas</a>
+				<a href="#misVideos">Videos</a>
+				<a href="#misLibros">Libros</a>
+				<a href="index.html">Pagina Principal</a>
+			</nav>
+		</div>
+		<div id="inicio" class="principal">
+			<div id="contenedorInfo">
+				<img src="Imagenes/miguele.jpg" width="300" height="400" alt="avatar-ardila">
+				<div class="info">
+					<p> <b>Nombre:</b> Miguel Eduardo Calambas Mulcue.<br/>
+						<b>Universidad:</b> Unicauca.<br/>
+						<b>Ocupación:</b> Estudiante de Ingeniería de Sistemas<br/>
+						<b>Fecha de nacimiento:</b>Septiembre 18 de 1994<br/>
+						<b>Lugar de Nacimiento:</b> Silvia (Cauca).<br/>
+						<b>Hobbies:</b> Programar, reparar motocicletas, viajar en motocicletas y dormir(Especialmente los viernes en la mañana...).<br/>
+						<b>Rol en la Tribu Lobos Guerreros:</b> Mago.
+					</p>
+				</div>
+			</div>
+		</div>
+		<p></p>
+		<!-- Division para los libros -->
+		<div id="misLibros">
+			<h1> Mis Libros Favoritos.</h1>
+			<div class="slides">
+				<div class="miLibro">
+					<a target="_blank" href="https://www.amazon.com.mx/Zen-Arte-Del-Mantenimiento-Motocicleta/dp/8415601956">
+						<img src="Imagenes/Zen_y_el_arte.jpg" width="200" height="250" alt=""></a>
+					<div class="infoLibro">
+						<h3>Titulo: Zen y el arte del mantenimiento de la motocicleta.</h3>
+						<h4>Descripcion:
+							Fedro emprende un viaje en moto con Chris, su hijo de once años. Mientras recorren las carreteras de Estados Unidos,
+							el arte del mantenimiento de la motocicleta pasa a ser una bella metáfora de cómo conjugar el frío y racional mundo
+							tecnológico y el cálido e imaginativo mundo del arte. Como en el zen, se trata de concentrarse, observar y apreciar
+							los detalles, hasta llegar a fundirse con la propia actividad, ya sea ésta una caminata por el bosque, escribir un
+							ensayo o tensar la cadena de una motocicleta.
+						</h4>
+					</div>
+				</div>
+				<div class="miLibro">
+					<a target="_blank" href="https://www.amazon.com/Cosmos-Carl-Sagan/dp/B000055ZOB">
+						<img src="Imagenes/cosmos.jpg" width="200" height="250" alt=""></a>
+					<div class="infoLibro">
+						<h3>Titulo: Cosmos de Carl Sagan.</h3>
+						<h4>Descripcion:
+							Cosmos es un libro escrito por Carl Sagan en 1980, basado en la serie
+							de documentales Cosmos: un viaje personal que él mismo produjo junto
+							a su última esposa Ann Druyan.
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Division para los videos -->
+		<div id="misVideos">
+			<h1>Mis Videos Favoritos.</h1>
+			<div class="slides">
+				<div class="miVideo">
+					<iframe width="690" height="410"
+						src="https://www.youtube.com/embed/NeQM1c-XCDc"
+						allowfullscreen></iframe>
+					<div class="infoVideo">
+						<h3> <p>Rammstein - Deutschland </p> </h3>
+					</div>
+				</div>
+				<div class="miVideo">
+					<iframe width="690" height="410"
+						src="https://www.youtube.com/embed/Lk5J5NYbmgk"
+						allowfullscreen></iframe>
+					<div class="infoVideo">
+						<h3> Trailer World of Warcraft: Cataclysm </h3>
+					</div>
+				</div>
+				<div class="miVideo">
+					<iframe width="690" height="410"
+						src="https://www.youtube.com/embed/HHmpvp3PsXo"
+						allowfullscreen></iframe>
+					<div class="infoVideo">
+						<h3> Homero - Callate o te apuñalo con un hisopo. </h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="piePagina">
+			<div class="informacion">
+				<div class="infoPagina">
+					<ul class="listNaveg">
+						<li><a href="#naveg">Inicio</a></li>
+						<li><a href="#misLibros">Libros</a></li>
+						<li><a href="#misVideos">Videos</a></li>
+						<li><a href="index.html">Index</a></li>
+					</ul>
+				</div>
+				<div class="infoPagina">
+					<h3>Creada por : Lobos Guerreros</h3>
+				</div>
+				<div class="infoPagina">
+					<h2>Info</h2>
+					<p>Página Web de la Tribu Lobos Guerreros, elaborada con propósitos educativos para la materia Ingeniería del Software 3 del Programa Ingeniería de Sistemas de la Univesidad del Cauca.</p>
+				</div>
+			</div>
+		</div>
+		</header>
+	</body>
+
+</html>
